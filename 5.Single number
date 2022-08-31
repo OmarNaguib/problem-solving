@@ -1,0 +1,11 @@
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        while True:
+            current=nums[0]
+            try:
+                for j in range(2):
+                    nums.remove(current)
+            except:
+                return current
+#there is a better solution with bit manipulation using xor
+        
