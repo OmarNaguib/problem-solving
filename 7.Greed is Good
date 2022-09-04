@@ -1,0 +1,17 @@
+""" https://www.codewars.com/kata/5270d0d18625160ada0000e4 """
+
+def score(dice):
+    result=0
+    count=[dice.count(1),
+           dice.count(2),
+           dice.count(3),
+           dice.count(4),
+           dice.count(5),
+           dice.count(6)]
+    threes=[x//3 for x in count]
+    count=[x%3 for x in count]
+    result+=threes[0]*1000
+    for i in range(5):
+        result+=100*(i+2)*threes[i+1]
+    result+= count[0]*100 + count[4]*50
+    return result
