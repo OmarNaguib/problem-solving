@@ -29,3 +29,5 @@ next, when a non-zero is encounterd it is swapped with the elemnt at the zero po
 
 ![image](https://user-images.githubusercontent.com/55961349/188899469-b573b238-caff-4194-b30f-311d70f8b0c2.png)
 
+
+credit for image and code: gtshepard,OldCodingFarmer on leetcode
