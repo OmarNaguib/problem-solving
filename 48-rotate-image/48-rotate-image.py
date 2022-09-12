@@ -7,8 +7,8 @@ class Solution:
         for beg in range(length//2):
             end= length-beg-1           
             for i in range(end-beg):
-                j= end-i
-                matrix[beg+i][end],matrix[end][end-i],matrix[end-i][beg],matrix[beg][beg+i]= matrix[beg][beg+i],matrix[beg+i][end],matrix[end][end-i],matrix[end-i][beg]
+                j,k=beg+i,end-i
+                matrix[j][end],matrix[end][k],matrix[k][beg],matrix[beg][j]= matrix[beg][j],matrix[j][end],matrix[end][k],matrix[k][beg]
             
             
             
