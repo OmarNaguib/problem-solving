@@ -3,26 +3,26 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    const queue=[]
+    const stack=[]
     for (let char of s){
         switch(char){
             case "(":
             case "[":
             case "{":
-                queue.push(char);
+                stack.push(char);
                 break;
             case ")":
-                if (queue.pop()!=="(") return false
+                if (stack.pop()!=="(") return false
                 break;
             case "]":
-                if (queue.pop()!=="[") return false
+                if (stack.pop()!=="[") return false
                 break;
             case "}":
-                if (queue.pop()!=="{") return false
+                if (stack.pop()!=="{") return false
                 break;
     }
     }
-    if (queue.length) return false
+    if (stack.length) return false
     return true
     
     
