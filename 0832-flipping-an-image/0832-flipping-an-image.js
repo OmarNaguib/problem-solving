@@ -3,5 +3,5 @@
  * @return {number[][]}
  */
 var flipAndInvertImage = function(image) {
-    return image.map((row)=>row.map(bit=>+!bit).reverse())
+    return image.map((row)=> row.reverse().map(bit => +!bit) )
 };
