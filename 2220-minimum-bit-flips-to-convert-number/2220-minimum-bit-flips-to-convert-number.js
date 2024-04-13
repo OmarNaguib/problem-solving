@@ -5,6 +5,7 @@
  */
 var minBitFlips = function(start, goal) {
     let count = 0;
-    for (char of (start^goal).toString(2)) if (char ==="1") count++
+    const flipper = (start^goal).toString(2)
+    for (char of flipper) if (char ==="1") count++
     return count
 };
