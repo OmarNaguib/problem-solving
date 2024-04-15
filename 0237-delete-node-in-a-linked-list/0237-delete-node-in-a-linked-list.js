@@ -11,13 +11,12 @@
  */
 var deleteNode = function(node) {
     while (node.next){
-        console.log(node.val)
         node.val=node.next.val
-            if (node.next.next==null) {
-            node.val = node.next.val
-            node.next=null
-            break;
-        }
+        if (node.next.next==null) {
+        node.val = node.next.val
+        node.next=null
+        break;
+    }
         node=node.next
 
     }
