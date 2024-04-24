@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 var isPowerOfThree = function(n) {
-    while(n>=3) n/=3
-    return n===1
+    const logToBaseOf3 = Math.log(n)/Math.log(3)
+    return Math.abs(logToBaseOf3 - Math.round(logToBaseOf3)) < 1e-10
     
 };
