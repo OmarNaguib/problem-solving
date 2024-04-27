@@ -13,15 +13,10 @@
 var isValidBST = function(root) {
     function inOrder(root){
         if (!root) return []
-        if (!root.left && !root.right) return [root.val]
         return [...inOrder(root.left),root.val,...inOrder(root.right)]
     }
     const result = inOrder(root)
-    let past = result [0];
-    for (number of result.slice(1)){
-        if (number <= past) return false
-        past = number
-    }
+    for (let i=1;i<result.length;i++) if (result[i] <= result[i-1]) return false
     return true
     
 };
