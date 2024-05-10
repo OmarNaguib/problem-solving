@@ -4,7 +4,6 @@
  * @return {number[]}
  */
 var kthSmallestPrimeFraction = function(arr, k) {
-    if (arr.length === 2) return arr
     const possibleCombinations = []
     for (let i =0;i<arr.length;i++){
         for (let j =i+1;j<arr.length;j++){
