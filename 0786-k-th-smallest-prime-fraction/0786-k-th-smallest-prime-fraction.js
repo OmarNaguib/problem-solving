@@ -10,6 +10,6 @@ var kthSmallestPrimeFraction = function(arr, k) {
         possibleCombinations.push([arr[i],arr[j]])
     }   
     }
-    possibleCombinations.sort((first,second) =>  second[0]/second[1] - first[0]/first[1] )
-    return possibleCombinations[possibleCombinations.length - k]
+    possibleCombinations.sort((first,second) =>   first[0]/first[1] - second[0]/second[1] )
+    return possibleCombinations[k-1]
 };
