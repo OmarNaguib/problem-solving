@@ -1,0 +1,25 @@
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isBalanced = function(root) {
+    if(!root) return true
+    function maxDepth(root){
+        if (!root) return 0
+        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right))
+    }
+    function minDepth(root){
+        if (!root) return 0
+        return 1 + Math.min(minDepth(root.left), minDepth(root.right))
+    }
+    return Math.abs(maxDepth(root.right) - maxDepth(root.left)) <=1
+            && isBalanced(root.left) && isBalanced(root.right)
+};
