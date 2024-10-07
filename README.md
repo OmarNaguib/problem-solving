@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0920-uncommon-words-from-two-sentences](https://github.com/OmarNaguib/problem-solving/tree/master/0920-uncommon-words-from-two-sentences) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/OmarNaguib/problem-solving/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Stack
 |  |
@@ -13,4 +14,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/OmarNaguib/problem-solving/tree/master/2800-minimum-string-length-after-removing-substrings) |
+## Hash Table
+|  |
+| ------- |
+| [0920-uncommon-words-from-two-sentences](https://github.com/OmarNaguib/problem-solving/tree/master/0920-uncommon-words-from-two-sentences) |
+## Counting
+|  |
+| ------- |
+| [0920-uncommon-words-from-two-sentences](https://github.com/OmarNaguib/problem-solving/tree/master/0920-uncommon-words-from-two-sentences) |
 <!---LeetCode Topics End-->
